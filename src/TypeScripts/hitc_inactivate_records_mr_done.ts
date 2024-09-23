@@ -14,7 +14,7 @@ import record  = require('N/record');
 import runtime = require('N/runtime');
 import search  = require('N/search');
 
-export const getInputData: EntryPoints.MapReduce.getInputData = (  ) => { // V3: Each reduce will process a batch of 1000 search results
+export const getInputData: EntryPoints.MapReduce.getInputData = (  ) => {
   const searchId = runtime.getCurrentScript().getParameter({ name: 'custscript_inactivate_mr_v2_saved_search' }) as string; // It's required
   log.audit('getInputData', `Starting at ${new Date()} with search ${searchId}.`);
   const batches: string[] = [];
