@@ -1,0 +1,10 @@
+{
+  "name": "hitc-demo-bulk-records",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@hitc/netsuite-types": "^2024.2.2",
+    "typescript": "^5.6.2"
+  },
+  "private": true,
+  "readme": "HITC Bulk Records Processing Demo"
+}
